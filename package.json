@@ -1,0 +1,21 @@
+{
+  "name": "block-snooze",
+  "version": "1.0.0",
+  "description": "this chrome extension for close or snooze tab on timer",
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "license": "ISC",
+  "author": "suresh choudhary",
+  "type": "commonjs",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "react-social-icons": "^6.24.0",
+    "tailwindcss": "^4.1.10"
+  }
+}

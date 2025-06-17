@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Block-Snooze",
+  "version": "1.0",
+  "description": "Block tab after timer or snooze tabs for later",
+  "author": "Suresh",
+  "permissions": ["storage", "activeTab", "alarms"],
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "options_ui": {
+    "page": "onboarding.html",
+    "open_in_tab": true
+  }
+}
