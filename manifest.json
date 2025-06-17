@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "Block tab after timer or snooze tabs for later",
   "author": "Suresh",
-  "permissions": ["storage", "activeTab", "alarms", "tabs"],
+  "permissions": ["storage", "activeTab", "alarms", "tabs", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "sw.js"
   },

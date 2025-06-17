@@ -6,21 +6,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+    <link rel="shortcut icon" href="snlogo.png" type="image/x-icon" />
     <title>Block-Snooze Onboarding</title>
     <link href="./output.css" rel="stylesheet" />
 
-    <!-- hide-scrollbar utility -->
     <style>
-      /* Hide scrollbar for Chrome, Safari and Opera */
+      /* hide-scrollbar utility */
       .hide-scrollbar::-webkit-scrollbar {
         display: none;
       }
-      /* Hide scrollbar for IE, Edge and Firefox */
       .hide-scrollbar {
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      /* Just in case: double-lock overflow */
       html,
       body {
         overflow-x: hidden;
@@ -28,133 +26,169 @@
     </style>
   </head>
   <body
-    class="h-full overflow-x-hidden bg-black bg-center bg-fill text-white"
+    class="h-full bg-black text-white bg-center bg-cover overflow-x-hidden"
     style="background-image: url('/bgshape.svg')"
   >
-    <!-- Full-height, vertical‐only scroll container -->
-    <div class="h-screen overflow-y-auto overflow-x-hidden hide-scrollbar p-6">
+    <div class="h-screen overflow-y-auto hide-scrollbar p-6">
       <div class="max-w-3xl mx-auto space-y-6">
-        <!-- Logo Card -->
         <div
-          class="bg-neutral-700/60 flex flex-col items-center justify-center rounded-2xl shadow-lg p-6"
+          class="bg-neutral-700/20 flex flex-col items-center justify-center rounded-2xl shadow-lg p-6 mt-20"
         >
           <img
-            class="rounded-sm mb-1"
             src="/snlogo.png"
             alt="Block-Snooze Logo"
-            width="160"
-            height="160"
+            class="w-130 h-45 rounded-sm mb-4"
           />
-          <h1 class="text-3xl font-bold text-neutral-200">
-            🌀 sn<span class="text-neutral-400">OO</span>ze 🌀
-          </h1>
+          <div class="bg-violet-600 p-6 rounded-t-4xl">
+            <h1
+              class="text-3xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent"
+            >
+              🌀 Block-Snooze 🌀
+            </h1>
+          </div>
+          <div class="bg-white py-2 px-5 rounded-4xl">
+            <p class="text-lg font-bold text-neutral-900">
+              Stay focused with automated tab blocking & timed snoozing.
+            </p>
+          </div>
         </div>
-
-        <!-- Card 1: What is Block-Snooze? -->
+        <!-- Card 1: Introduction -->
         <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
-          <h2 class="text-2xl font-bold mb-3">
-            ⚙️ What is <span class="font-bold">Block-Snooze</span>?
+          <h2 class="text-2xl font-bold mb-4">
+            🌟 Introduction to Block-Snooze
           </h2>
-          <p class="leading-relaxed">
-            <span class="font-bold">Block-Snooze</span> is a Chrome extension
-            that helps you stay focused by
-            <span class="font-bold">blocking distracting tabs</span> after a
-            timer or <span class="font-bold">snoozing tabs</span> for later.
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Block-Snooze helps you reclaim focus by automatically hiding or
+              closing distracting tabs on your schedule.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Whether you need a quick 10-minute break or a full-day pause, set
+              custom timers in hours and minutes.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Domain-wide snooze ensures that once you snooze one tab, all
+              other tabs from the same site will be blocked too.</span
+            >
           </p>
         </div>
 
-        <!-- Card 2: Features & Usage -->
+        <!-- Card 2: Core Features -->
         <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
-          <h2 class="text-2xl font-bold mb-3">
-            🚀 <span class="font-bold">Features & Usage</span>
-          </h2>
-          <ul class="list-disc list-inside space-y-2 leading-relaxed">
-            <li>
-              <span class="font-bold">⏱ Timer-based Blocking:</span> Auto-block
-              tabs after your set interval.
-            </li>
-            <li>
-              <span class="font-bold">💤 Snooze Tabs:</span> Hide tabs now,
-              reopen them later.
-            </li>
-            <li>
-              <span class="font-bold">🔔 Notifications:</span> Alerts before
-              block or unsnooze.
-            </li>
-            <li>
-              <span class="font-bold">🔧 Easy Popup UI:</span> Configure
-              everything with one click.
-            </li>
-          </ul>
+          <h2 class="text-2xl font-bold mb-4">🌟 Core Features</h2>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >⏱️ <strong>Timer-Based Blocking:</strong> Automatically close or
+              hide tabs when your timer expires.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >💤 <strong>Snooze &amp; Resume:</strong> Temporarily dismiss tabs
+              now and reopen them exactly when you choose.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >⏳ <strong>Scheduled Closure:</strong> Keep tabs open until a
+              future time, then automatically close them.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2">
+            <span class="text-red-500">🟠</span>
+            <span
+              >🔔 <strong>Notifications:</strong> Receive a brief alert just
+              before any snooze or close action occurs.</span
+            >
+          </p>
         </div>
 
         <!-- Card 3: Getting Started -->
         <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
-          <h2 class="text-2xl font-bold mb-3">
-            🛠️ <span class="font-bold">Getting Started</span>
-          </h2>
-          <ol class="list-decimal list-inside space-y-2 leading-relaxed">
-            <li>
-              <span class="font-bold">Install</span> from the Chrome Web Store
-              or load unpacked in dev mode.
-            </li>
-            <li>
-              <span class="font-bold">Click</span> the toolbar icon to block or
-              snooze a tab.
-            </li>
-            <li>
-              <span class="font-bold">Manage</span> your snoozed tabs in the
-              popup.
-            </li>
-          </ol>
+          <h2 class="text-2xl font-bold mb-4">🚀 Getting Started</h2>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Install from the Chrome Web Store or load unpacked in Developer
+              Mode.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Click the toolbar icon to open the popup and schedule your first
+              snooze or close timer.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2">
+            <span class="text-red-500">🟠</span>
+            <span
+              >Visit the Dashboard to view, unsnooze, or cancel any active
+              timers in one place.</span
+            >
+          </p>
         </div>
 
-        <!-- Card 4: Tips & Best Practices -->
+        <!-- Card 4: Best Practices -->
         <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
-          <h2 class="text-2xl font-bold mb-3">
-            💡 <span class="font-bold">Tips & Best Practices</span>
-          </h2>
-          <ul class="list-disc list-inside space-y-2 leading-relaxed">
-            <li>
-              <span class="font-bold">Batch Work:</span> Long timers for deep
-              focus.
-            </li>
-            <li>
-              <span class="font-bold">Snooze Smart:</span> Hold off low-priority
-              tabs.
-            </li>
-            <li>
-              <span class="font-bold">Check Alerts:</span> Know when tabs
-              return.
-            </li>
-          </ul>
+          <h2 class="text-2xl font-bold mb-4">💡 Best Practices</h2>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >🎯 Batch your focus sessions: group similar tabs and snooze them
+              together for maximum productivity.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2 mb-3">
+            <span class="text-red-500">🟠</span>
+            <span
+              >📊 Monitor your timers regularly in the Dashboard to avoid any
+              surprises when tabs reopen.</span
+            >
+          </p>
+          <p class="flex items-start space-x-2">
+            <span class="text-red-500"> </span>
+            <span
+              >❌ Cancel unused timers promptly to keep your workflow clean and
+              uncluttered.</span
+            >
+          </p>
         </div>
 
-        <!-- Card 5: Author & Links -->
+        <!-- Card 5: About the Author -->
         <div
           class="bg-neutral-700/60 flex flex-col items-center rounded-2xl shadow-lg p-6"
         >
+          <h2 class="text-2xl font-bold mb-4">About the Author</h2>
           <img
-            class="rounded-full mb-2"
             src="/avatar.png"
             alt="Author Avatar"
-            width="60"
-            height="60"
+            class="w-16 h-16 rounded-full mb-4"
           />
-          <p class="leading-relaxed mt-2 mb-1.5">
-            Built with ❤️ by <span class="font-bold">Suresh</span>
+          <p class="text-center mb-2">
+            Built with passion by <strong>Suresh</strong>.,
           </p>
           <div class="flex space-x-4">
             <a
-              href="https://github.com/your-username/block-snooze"
+              href="https://github.com/sschoudhary30"
               target="_blank"
-              class="text-amber-500 hover:text-blue-200 font-bold"
+              class="text-amber-500 hover:text-amber-300 font-bold"
               >GitHub</a
             >
             <a
-              href="https://linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/sschoudhary30"
               target="_blank"
-              class="text-amber-500 hover:text-blue-200 font-bold"
+              class="text-amber-500 hover:text-amber-300 font-bold"
               >LinkedIn</a
             >
           </div>
