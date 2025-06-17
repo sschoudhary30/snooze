@@ -11,8 +11,22 @@
     class="h-full bg-black text-white overflow-y-auto p-6"
     style="background-image: url('/bgshape.svg')"
   >
-    <div class="max-w-5xl mx-auto p-6 space-y-6">
+    <div
+      class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex justify-center mb-2"
+    >
+      <div
+        class="bg-neutral-300/10 shadow-2xl border-2 shadow-neutral-300/50 border-neutral-600 rounded-3xl py-1 px-3"
+      >
+        <img
+          src="/snlogo.png"
+          alt="Block-Snooze Logo"
+          class="w-50 h-14 rounded-sm"
+        />
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 sm:py-5 py-4 space-y-6">
       <!-- Header Card -->
+
       <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
         <h1 class="text-3xl font-bold mb-4">🗄️ Snooze Dashboard</h1>
         <p class="text-neutral-300 mb-2">All snoozes & scheduled closures</p>
