@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Snooze Dashboard</title>
+  </head>
+  <body
+    class="h-full bg-black text-white overflow-y-auto p-6"
+    style="background-image: url('/bgshape.svg')"
+  >
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-6">
+        <h1 class="text-3xl font-bold mb-4">🗄️ Snooze Dashboard</h1>
+        <p class="text-neutral-300 mb-2">
+          Showing tabs snoozed for more than 1 hour
+        </p>
+      </div>
+      <div id="dashboard-list" class="space-y-4"></div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
