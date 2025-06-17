@@ -11,7 +11,7 @@
 ## 🌟 Popup
 
 <p align="center">
-  <img src="popup.png" alt="Popup UI Screenshot" width="600" />
+  <img src="popup.png" alt="Popup UI Screenshot" width="300" />
 </p>
 
 ---
