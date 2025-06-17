@@ -4,30 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Block-Snooze Popup</title>
   </head>
-  <body>
-    <div>
-      <div>
+  <body
+    class="bg-black h-full w-90 overflow-x-hidden bg-fixed bg-left text-white flex justify-center items-start p-4"
+    style="
+      background-color: #000;
+      background-image: url('/bgshape.svg');
+      background-repeat: no-repeat;
+      background-position: 50px 70px;
+      background-size: 580px 400px;
+    "
+  >
+    <!-- Popup container: fixed width, responsive height -->
+    <div class="w-[350px] space-y-6">
+      <!-- Logo Card -->
+      <div
+        class="bg-neutral-700/60 flex flex-col items-center rounded-2xl shadow-lg p-4"
+      >
         <img
-          class="rounded-sm mb-1"
           src="/snlogo.png"
           alt="Block-Snooze Logo"
           width="160"
           height="160"
+          class="rounded-sm mb-2"
         />
+        <h1 class="text-2xl font-bold text-neutral-200">Block & Snooze</h1>
       </div>
-      <div class="snooze-grid">
-        <button>Snooze for 10 minutes</button>
-        <button>Snooze for 30 minutes</button>
-        <button>Snooze for 1 minutes</button>
-        <button>Snooze for 1 day</button>
+
+      <!-- Snooze Options Card -->
+      <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-3">⏰ Snooze Options</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <button
+            id="snooze10min"
+            class="w-full py-2 bg-amber-400 rounded-lg font-bold hover:bg-amber-500"
+          >
+            10 Minutes
+          </button>
+          <button
+            id="snooze30min"
+            class="w-full py-2 bg-amber-400 rounded-lg font-bold hover:bg-amber-500"
+          >
+            30 Minutes
+          </button>
+          <button
+            id="snooze1hour"
+            class="w-full py-2 bg-amber-400 rounded-lg font-bold hover:bg-amber-500"
+          >
+            1 Hour
+          </button>
+          <button
+            id="snooze1day"
+            class="w-full py-2 bg-amber-400 rounded-lg font-bold hover:bg-amber-500"
+          >
+            1 Day
+          </button>
+        </div>
       </div>
-      <div id="snooze-list">
-        <div class="secton-title">Snoozed tabs</div>
+
+      <!-- Snoozed Tabs List Card -->
+      <div class="bg-neutral-700/60 rounded-2xl shadow-lg p-4">
+        <h2 class="text-xl font-bold mb-2">🗒️ Snoozed Tabs</h2>
+        <div id="snooze-list" class="space-y-2">
+          <!-- Dynamically populated snoozed tabs -->
+        </div>
       </div>
     </div>
-
     <script src="popup.js"></script>
   </body>
 </html>
