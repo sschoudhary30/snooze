@@ -6,15 +6,14 @@
 
 **Block-Snooze** is a lightweight Chrome extension designed to help you reclaim your attention. Automatically hide or close distracting tabs on a precise schedule—down to the hour and minute—and domain-wide snoozing ensures a single action keeps all related tabs out of your way. When your timer expires, tabs reopen or close automatically, so you stay on track without lifting a finger.
 
----
+
 
 ## 🌟 Popup
-
 <p align="center">
   <img src="popup.png" alt="Popup UI Screenshot" width="300" />
 </p>
 
----
+
 
 ## 🔥 Key Features
 
@@ -36,23 +35,23 @@
 - **🛡️ Privacy-First**  
   All functionality runs locally in your browser; no data is ever sent to external servers.
 
----
+
 
 ## 🚀 Dashboard
 
 <p align="center">
-  <img src="dashboard.png" alt="Dashboard Screenshot" width="600" />
+  <img src="dashboard.png" alt="Dashboard Screenshot" width="600" height="350" />
 </p>
 
----
+
 
 ## 🎓 Onboarding
 
 <p align="center">
-  <img src="onboard.png" alt="Onboarding Screen" width="600" />
+  <img src="onboard.png" alt="Onboarding Screen" width="600" height="350" />
 </p>
 
----
+
 
 ## 🛠️ Installation
 
@@ -76,7 +75,7 @@ cd block-snooze
 3. **Click Snooze** to immediately hide/close tabs domain-wide, or **Close Tab** to schedule a future close.
 4. **Visit the Dashboard** anytime to view live countdowns, remove timers, or unsnooze tabs.
 
----
+
 
 ## 💡 Pro Tips
 
@@ -85,7 +84,6 @@ cd block-snooze
 - **Check your Dashboard regularly:** Stay ahead of reopening tabs so you’re never surprised.
 - **Cancel unneeded timers:** Keep your environment clean by removing old snoozes.
 
----
 
 ## 🤝 Contributing
 
@@ -97,13 +95,13 @@ We love pull requests! To contribute:
    git checkout -b feature/my-new-feature
    ```
 
----
+
 
 ## 📜 License
 
 License MIT © suresh choudhary
 
----
+
 
 ## 👤 Author
 
@@ -112,6 +110,6 @@ License MIT © suresh choudhary
 - GitHub: [sschoudhary30](https://github.com/sschoudhary30)
 - LinkedIn: [sschoudhary30](https://www.linkedin.com/in/sschoudhary30)
 
----
+
 
 _Stay focused, stay productive!_
